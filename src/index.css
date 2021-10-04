@@ -1,0 +1,98 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+}
+
+ol, ul {
+    padding-left: 30px;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-info {
+    margin-left: 20px;
+}
+
+.bold-history {
+    padding: 6px;
+    font-weight: bold;
+    color: red;
+    background: white;
+    border-color: slategray;
+}
+
+.normal-history {
+    padding: 6px;
+    font-weight: normal;
+    color: black;
+    background: whitesmoke;
+    border-color: slategray;
+}
+
+.sort-button {
+    padding: 6px;
+    background: white;
+    border-color: slategray;
+}
+
+.square.winSquare {
+    background: rgb(112, 245, 183)
+}
+
+.square.currentMove {
+    background: yellow;
+}
+
+.square.x{
+    color: red;
+}
+
+.square.o{
+    color: blue;
+}
+
+/* .square.previousMoves {
+    color: black;
+} */
+
+.board-size {
+    font-size: larger;
+    font-weight: bold;
+    margin: 5px;
+}
